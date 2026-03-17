@@ -1,5 +1,6 @@
 class Person:
     people = {}
+
     def __init__(self, name, age):
         self.name = name
         self.age = age
@@ -9,6 +10,7 @@ class Person:
 def create_person_list(people: list) -> list:
     Person.people = {}
     persons = []
+
     for data in people:
         person = Person(data["name"], data["age"])
         persons.append(person)
